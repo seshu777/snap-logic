@@ -1,0 +1,122 @@
+{
+    "class_id": "com-snaplogic-snap-api-sql-accounts-redshiftdatabaseaccount",
+    "class_version": 1,
+    "migration_metadata": {
+        "source_org": "Partners"
+    },
+    "property_map": {
+        "info": {
+            "label": {
+                "value": "RedShift"
+            },
+            "notes": {
+                "value": null
+            }
+        },
+        "settings": {
+            "JdbcDriversProp": {
+                "value": []
+            },
+            "advancedProperties": {
+                "value": {
+                    "acquireIncrement": {
+                        "value": 1
+                    },
+                    "autoCommit": {
+                        "value": true
+                    },
+                    "batchSize": {
+                        "value": 50
+                    },
+                    "checkoutTimeout": {
+                        "value": 10000
+                    },
+                    "fetchSize": {
+                        "value": 100
+                    },
+                    "idleConnectionTestPeriod": {
+                        "value": 5
+                    },
+                    "maxIdleTime": {
+                        "value": 30
+                    },
+                    "maxPoolSize": {
+                        "value": 50
+                    },
+                    "minPoolSize": {
+                        "value": 0
+                    },
+                    "retryAttempts": {
+                        "value": 0
+                    },
+                    "urlProperties": {
+                        "value": []
+                    }
+                }
+            },
+            "connectionProperties": {
+                "value": {
+                    "accessKeyId": {
+                        "fp": "5537582b5408b627cd4dd4ff1c4b0ed40ea189ffc33ccf49e196ff6901dea522",
+                        "key": "account-cloud-managed-55aeb42a050186140d44b424-2015-07-21T21:05:51-432179",
+                        "sym_iv": "+iE47zAw/vxps9RQx47OMw==",
+                        "sym_key": "qcupJCdAmEzufrDXrBfpzGY6bhypYXq4z/OFmWZWclLkFci1rTY1ZGRWk0GrKDdSmEEtFSqn+Jf/P8KqIv8z9wBfcm7+GAVlxnt7utFz2iDqbexB5qKcG1h/N3lGscsreHd2yTT5TCkKvZ5TlvfN5xrggvwLEyEYXzvesb9n2KDBu0FB2gYQRjZ2KCAaknzX1z/CyCDoOcCj08g32aLl/pIYSesoIgAsKlOEZ3BrM9k7cdOLIlZCiGKFh2S1PetUZaNZ4tN2LB+0UVyqVBJ9trhiRuxPeMzsLiWACmN0xmjaPgyH6NFTMA+6h+e5PQncOz9mQtdDjtP8oM0Tf589ug==",
+                        "value": "kaesVRBTtjn0jHsf8WsYVhwOZGvMfV2JiodSA4m3UqM="
+                    },
+                    "bucket": {
+                        "value": "poc-common-user"
+                    },
+                    "databaseName": {
+                        "value": "snaplogic"
+                    },
+                    "hostname": {
+                        "value": "rs-agilisium-poc-cluster.chkbkhjojztp.us-west-2.redshift.amazonaws.com"
+                    },
+                    "password": {
+                        "fp": "5537582b5408b627cd4dd4ff1c4b0ed40ea189ffc33ccf49e196ff6901dea522",
+                        "key": "account-cloud-managed-55aeb42a050186140d44b424-2015-07-21T21:05:51-432179",
+                        "sym_iv": "X/01gZk2e/MJLuuC5qShVw==",
+                        "sym_key": "M8tZJehaxFDdPFpSvNgrpXfzYlD7qM6ZIQXcwnOeW6a2ixo/OaVtLpMTRIioQHP8GgE9anv7CJlrty0ge9qAuzkm4f8lkWQvO1ZM7Uo/4cq3KiphfUr94CDlDg6drePxOLyFZWHzI1/2pFzAQbJNzt5lQZjxi4Io032LlgIXCHIQPJcpufCOdJaxr95EFexuzPNfS3YeqRspsa0ZBOcJfr6eb0akW5dkDKFUf8Lw5007okW4aVio7otu1yCRiWQlXJjKx671q8E4EjxlZdVfBZpeHGNxd+yQysab/zvyeA6QPPOSSO/dnZcX1oH9+bE3+oZe2U9kcNYvSkQhEuNliQ==",
+                        "value": "LAq24wGs55GqaPOUyOphsQ=="
+                    },
+                    "portNumber": {
+                        "value": 5439
+                    },
+                    "s3Folder": {
+                        "value": null
+                    },
+                    "secretKey": {
+                        "fp": "5537582b5408b627cd4dd4ff1c4b0ed40ea189ffc33ccf49e196ff6901dea522",
+                        "key": "account-cloud-managed-55aeb42a050186140d44b424-2015-07-21T21:05:51-432179",
+                        "sym_iv": "CCl5leOJOv0RoYjVurbRMw==",
+                        "sym_key": "mzIOJLutL2javNCHdkcJ9+Ss+rvVkw7sU8xcPShN0RB3kxodufcTxR2Ov6nKRRWX1Sxe75OHD7Ev1/W7/tcBOprdNB71sNNsyOFZPIisGg/Q/PheqX/XZkjof8t+ck8yB+cFarmsQABzGGk7xmeAxc7jnlfBdmrf5mYCNSir0EcApWPkwsdOhddS43lxX++t0f/StoIQM81Th9NjnNahAfJS5cJOVHsAS42mZbKhvq2d0/xtUvKlv4qWs7iW2f2n8F5z9v9NX2MGB/37RHBKZY2JqKba9s9qAwRkl9EeyvhVgklrxXNoBbxJjzADnqDXjvnrpSk71R71w5gGY/ojoQ==",
+                        "value": "fO7rkdMnNZ7O8rMB7iXQLwMlnPR7OaoVh7mFA50LydPeSPw1kpQ2SrXY9BfyMzD3"
+                    },
+                    "username": {
+                        "value": "snaplogic"
+                    }
+                }
+            },
+            "iamProperties": {
+                "value": {
+                    "awsAccountID": {
+                        "value": null
+                    },
+                    "iamRoleName": {
+                        "value": null
+                    },
+                    "regionName": {
+                        "value": null
+                    }
+                }
+            },
+            "jdbcDriverClass": {
+                "value": "org.postgresql.Driver"
+            },
+            "jdbcUrl": {
+                "value": null
+            }
+        },
+        "view_serial": 100
+    }
+}
