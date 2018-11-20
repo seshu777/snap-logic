@@ -8,11 +8,17 @@
             "src_id": "11111111-1111-1111-1111-000000000002",
             "src_view_id": "output0"
         },
-        "link102": {
-            "dst_id": "11111111-1111-1111-1111-000000000002",
+        "link103": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000001",
             "src_view_id": "outputRows"
+        },
+        "link104": {
+            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000003",
+            "src_view_id": "output0"
         }
     },
     "property_map": {
@@ -54,13 +60,54 @@
                         },
                         "path": {
                             "expression": false,
-                            "value": "shared/Config.expr"
+                            "value": "../shared/Config.expr"
                         }
                     }
                 ]
             },
             "param_table": {
-                "value": []
+                "value": [
+                    {
+                        "capture": {
+                            "value": false
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "prj"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "Apple"
+                        }
+                    },
+                    {
+                        "capture": {
+                            "value": false
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "test"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": null
+                        }
+                    }
+                ]
             }
         }
     },
@@ -70,7 +117,7 @@
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
                 "grid_x_int": 4,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -81,8 +128,8 @@
             },
             "11111111-1111-1111-1111-000000000001": {
                 "error": {},
-                "grid_x_int": 2,
-                "grid_y_int": 1,
+                "grid_x_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -94,7 +141,19 @@
             "11111111-1111-1111-1111-000000000002": {
                 "error": {},
                 "grid_x_int": 3,
-                "grid_y_int": 1,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": "snap catagory"
+            },
+            "11111111-1111-1111-1111-000000000003": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -176,7 +235,7 @@
                     },
                     "tableName": {
                         "expression": false,
-                        "value": "emp_test"
+                        "value": "emp_test_demo_1"
                     }
                 },
                 "view_serial": 101
@@ -327,10 +386,10 @@
                 },
                 "settings": {
                     "nullSafeAccess": {
-                        "value": false
+                        "value": true
                     },
                     "passThrough": {
-                        "value": false
+                        "value": true
                     },
                     "transformations": {
                         "value": {
@@ -342,82 +401,96 @@
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "$designation"
+                                            "value": "lib.config.Project['Apple']"
                                         },
                                         "targetPath": {
-                                            "value": "$designation"
+                                            "value": "$Apple_project"
                                         }
                                     },
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "$end_time"
+                                            "value": "lib.config.Gen[$gender]"
                                         },
                                         "targetPath": {
-                                            "value": "$end_time"
+                                            "value": "$Gender_desc"
                                         }
-                                    },
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000003": {
+            "class_id": "com-snaplogic-snaps-transform-datatransform",
+            "class_version": 4,
+            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Mapper1"
+                    },
+                    "notes": {
+                        "value": null
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "nullSafeAccess": {
+                        "value": false
+                    },
+                    "passThrough": {
+                        "value": true
+                    },
+                    "transformations": {
+                        "value": {
+                            "mappingRoot": {
+                                "value": "$"
+                            },
+                            "mappingTable": {
+                                "value": [
                                     {
                                         "expression": {
                                             "expression": true,
-                                            "value": "$flag"
+                                            "value": "_test"
                                         },
                                         "targetPath": {
-                                            "value": "$flag"
-                                        }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$flag1"
-                                        },
-                                        "targetPath": {
-                                            "value": "$flag1"
-                                        }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$gender"
-                                        },
-                                        "targetPath": {
-                                            "value": "$gender"
-                                        }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$name"
-                                        },
-                                        "targetPath": {
-                                            "value": "$name"
-                                        }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$salary"
-                                        },
-                                        "targetPath": {
-                                            "value": "$salary"
-                                        }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$sno"
-                                        },
-                                        "targetPath": {
-                                            "value": "$sno"
-                                        }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "$start_time"
-                                        },
-                                        "targetPath": {
-                                            "value": "$start_time"
+                                            "value": "$A"
                                         }
                                     }
                                 ]
