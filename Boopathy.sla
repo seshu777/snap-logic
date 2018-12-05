@@ -1,0 +1,30 @@
+{
+    "class_id": "com-snaplogic-snaps-rest-restbasicauthaccount",
+    "class_version": 1,
+    "migration_metadata": {
+        "source_org": "Partners"
+    },
+    "property_map": {
+        "info": {
+            "label": {
+                "value": "Boopathy"
+            },
+            "notes": {
+                "value": null
+            }
+        },
+        "settings": {
+            "password": {
+                "fp": "5537582b5408b627cd4dd4ff1c4b0ed40ea189ffc33ccf49e196ff6901dea522",
+                "key": "account-cloud-managed-55aeb42a050186140d44b424-2015-07-21T21:05:51-432179",
+                "sym_iv": "iQ9STiO6Cm9SS0gHduIFHA==",
+                "sym_key": "PO+qRVz0c2UCNV30N8H7gfi6zCZlxgSi3oFoujQRD6EdluWBWqYagkZ3Qi+Dy9URoO6aH6zmh8oo/IQ1U5KMWFii3S84g+NJMUt9cKU8XfdklkcSij4QAPTXEFx8kUwaXTS+18/7mQ+S++MbVuxB+K5EfEJQN9GtyuteuU+dfQ9poAigtvRul4oloeTdHn4W69JYZNomuf7Ppy3kSPBV9WaGu0ECY03/Z+ExsuVnEjkE8j6pWnQEEeQEPH5G0sTPYYMSCupC/MnevfotSSmwqbggWR4iLy0jM+xsdCGTt915r38h9NS+nlVtmvN+vvgQNMVid+RsGPj8bYpukwrkIg==",
+                "value": "GF++ttEuiaN7AohVaLJirg=="
+            },
+            "username": {
+                "value": "boopathy.srinivasan@agilisium.com"
+            }
+        },
+        "view_serial": 100
+    }
+}
