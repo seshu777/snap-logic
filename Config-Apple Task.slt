@@ -1,6 +1,6 @@
 {
     "job_class": "PipelineJob",
-    "job_name": "Config Task",
+    "job_name": "Config-Apple Task",
     "note": "",
     "parameters": {
         "enabled": true,
@@ -8,13 +8,13 @@
         "include_external_urls": true,
         "job_alias": null,
         "job_type": "regular",
-        "llfeed_token": "qyezCf848JJUrm9nB7OkYKTYAxO2Ud99",
+        "llfeed_token": "9DVCBU5kTt5mvyUmJWqkBcDujeSZgAMf",
         "max_failures": 10,
         "max_in_flight": 200,
         "notification": {
             "recipients": null
         },
-        "pipeline_path": "Config",
+        "pipeline_path": "Config-Apple",
         "snaplex_path": "DEV Cloud"
     },
     "schedule": {},

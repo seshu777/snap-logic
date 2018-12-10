@@ -8,16 +8,16 @@
             "src_id": "11111111-1111-1111-1111-000000000000",
             "src_view_id": "output0"
         },
-        "link114": {
-            "dst_id": "11111111-1111-1111-1111-000000000003",
-            "dst_view_id": "input0",
-            "src_id": "11111111-1111-1111-1111-000000000002",
-            "src_view_id": "output0"
-        },
         "link115": {
             "dst_id": "11111111-1111-1111-1111-000000000000",
             "dst_view_id": "input0",
             "src_id": "11111111-1111-1111-1111-000000000001",
+            "src_view_id": "output0"
+        },
+        "link117": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000002",
             "src_view_id": "output0"
         }
     },
@@ -58,28 +58,12 @@
                 "view_type": {
                     "value": "document"
                 }
-            },
-            "11111111-1111-1111-1111-000000000004_input0": {
-                "label": {
-                    "value": "REST Get - input0"
-                },
-                "view_type": {
-                    "value": "document"
-                }
             }
         },
         "output": {
             "11111111-1111-1111-1111-000000000003_output0": {
                 "label": {
                     "value": "REST Post - output0"
-                },
-                "view_type": {
-                    "value": "document"
-                }
-            },
-            "11111111-1111-1111-1111-000000000004_output0": {
-                "label": {
-                    "value": "REST Get - output0"
                 },
                 "view_type": {
                     "value": "document"
@@ -316,7 +300,7 @@
                             "value": false
                         },
                         "value": {
-                            "value": "true"
+                            "value": "false"
                         }
                     },
                     {
@@ -419,18 +403,6 @@
                 "rot_int": 0,
                 "rot_tail_int": 0,
                 "source": "snap catagory"
-            },
-            "11111111-1111-1111-1111-000000000004": {
-                "error": {},
-                "grid_x_int": 7,
-                "grid_y_int": 3,
-                "index": null,
-                "input": {},
-                "output": {},
-                "recommendation_id": null,
-                "rot_int": 0,
-                "rot_tail_int": 0,
-                "source": "snap catagory"
             }
         },
         "pan_x_num": 0,
@@ -493,11 +465,11 @@
                                     "value": "_Pipeline.toLowerCase()=='yes'"
                                 },
                                 "returnValue": {
-                                    "expression": false,
-                                    "value": "Pipeline"
+                                    "expression": true,
+                                    "value": "_Pipeline"
                                 },
                                 "targetPath": {
-                                    "value": "$asset"
+                                    "value": "$asset_types"
                                 }
                             }
                         ]
@@ -648,10 +620,10 @@
                 },
                 "settings": {
                     "nullSafeAccess": {
-                        "value": false
+                        "value": true
                     },
                     "passThrough": {
-                        "value": false
+                        "value": true
                     },
                     "transformations": {
                         "value": {
@@ -662,17 +634,8 @@
                                 "value": [
                                     {
                                         "expression": {
-                                            "expression": true,
-                                            "value": "$asset"
-                                        },
-                                        "targetPath": {
-                                            "value": "$asset_type"
-                                        }
-                                    },
-                                    {
-                                        "expression": {
-                                            "expression": true,
-                                            "value": "\"/\"+encodeURIComponent(_dest_org)+\"/\"+encodeURIComponent(_dest_project_space)+\"/\"+encodeURIComponent(_dest_project_name)+\"/\""
+                                            "expression": false,
+                                            "value": "Partners/projects/Ball"
                                         },
                                         "targetPath": {
                                             "value": "$dest_path"
@@ -680,8 +643,8 @@
                                     },
                                     {
                                         "expression": {
-                                            "expression": true,
-                                            "value": "_pod_base_url+\"/api/1/rest/public/project/migrate/\"+encodeURIComponent(_source_org)+\"/\"+encodeURIComponent(_source_project_space)+\"/\"+encodeURIComponent(_source_project_name)+\"/\""
+                                            "expression": false,
+                                            "value": "https://elastic.snaplogic.com/api/1/rest/public/project/migrate/Partners/projects/Apple"
                                         },
                                         "targetPath": {
                                             "value": "$source_path"
@@ -703,6 +666,15 @@
                                         },
                                         "targetPath": {
                                             "value": "$async"
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "expression": false,
+                                            "value": "$asset_types"
+                                        },
+                                        "targetPath": {
+                                            "value": "$asset_types"
                                         }
                                     }
                                 ]
@@ -830,7 +802,7 @@
                         "value": false
                     },
                     "uploadBodyType": {
-                        "value": "Multipart form-data"
+                        "value": "Binary"
                     },
                     "uploadFile": {
                         "expression": false,
@@ -868,129 +840,6 @@
                     },
                     "uploadTransferRequestType": {
                         "value": "Chunked transfer encoding"
-                    }
-                },
-                "view_serial": 100
-            }
-        },
-        "11111111-1111-1111-1111-000000000004": {
-            "class_id": "com-snaplogic-snaps-rest-get",
-            "class_version": 2,
-            "instance_id": "11111111-1111-1111-1111-000000000004",
-            "property_map": {
-                "account": {
-                    "account_ref": {
-                        "expression": false,
-                        "value": {
-                            "label": {
-                                "expression": false,
-                                "value": "Boopathy"
-                            },
-                            "ref_class_id": {
-                                "value": "com-snaplogic-snaps-rest-restbasicauthaccount"
-                            },
-                            "ref_id": {
-                                "expression": false,
-                                "value": null
-                            }
-                        }
-                    }
-                },
-                "error": {
-                    "error0": {
-                        "label": {
-                            "value": "error0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    },
-                    "error_behavior": {
-                        "value": "fail"
-                    }
-                },
-                "info": {
-                    "label": {
-                        "value": "REST Get"
-                    },
-                    "notes": {
-                        "value": null
-                    }
-                },
-                "input": {
-                    "input0": {
-                        "label": {
-                            "value": "input0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "output": {
-                    "output0": {
-                        "label": {
-                            "value": "output0"
-                        },
-                        "view_type": {
-                            "value": "document"
-                        }
-                    }
-                },
-                "settings": {
-                    "connTimeout": {
-                        "value": 30
-                    },
-                    "executeDuringPreview": {
-                        "value": true
-                    },
-                    "followRedirects": {
-                        "value": true
-                    },
-                    "hasNext": {
-                        "expression": true,
-                        "value": null
-                    },
-                    "header": {
-                        "value": []
-                    },
-                    "nextUrl": {
-                        "expression": true,
-                        "value": null
-                    },
-                    "paginationInterval": {
-                        "value": 0
-                    },
-                    "processArray": {
-                        "value": false
-                    },
-                    "queryParams": {
-                        "value": []
-                    },
-                    "rawData": {
-                        "value": false
-                    },
-                    "responseEntityType": {
-                        "value": "DEFAULT"
-                    },
-                    "retry": {
-                        "value": 5
-                    },
-                    "retryInterval": {
-                        "value": 3
-                    },
-                    "serviceUrl": {
-                        "expression": true,
-                        "value": "$source_path"
-                    },
-                    "showAllHeaders": {
-                        "value": false
-                    },
-                    "timeout": {
-                        "value": 900
-                    },
-                    "trustAllCerts": {
-                        "value": false
                     }
                 },
                 "view_serial": 100

@@ -110,8 +110,8 @@
         "detail_map": {
             "11111111-1111-1111-1111-000000000000": {
                 "error": {},
-                "grid_x_int": 4,
-                "grid_y_int": 1,
+                "grid_x_int": 3,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -122,8 +122,8 @@
             },
             "11111111-1111-1111-1111-000000000001": {
                 "error": {},
-                "grid_x_int": 2,
-                "grid_y_int": 1,
+                "grid_x_int": 1,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -134,8 +134,8 @@
             },
             "11111111-1111-1111-1111-000000000002": {
                 "error": {},
-                "grid_x_int": 3,
-                "grid_y_int": 1,
+                "grid_x_int": 2,
+                "grid_y_int": 2,
                 "index": null,
                 "input": {},
                 "output": {},
@@ -155,7 +155,24 @@
             "class_version": 1,
             "instance_id": "11111111-1111-1111-1111-000000000000",
             "property_map": {
-                "account": {},
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "RedShift"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-redshiftdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
                 "error": {
                     "error0": {
                         "label": {
@@ -211,7 +228,24 @@
             "class_version": 3,
             "instance_id": "11111111-1111-1111-1111-000000000001",
             "property_map": {
-                "account": {},
+                "account": {
+                    "account_ref": {
+                        "expression": false,
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "value": "RedShift"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snap-api-sql-accounts-redshiftdatabaseaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
                 "error": {
                     "error0": {
                         "label": {

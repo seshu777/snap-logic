@@ -7,7 +7,7 @@
     "property_map": {
         "info": {
             "label": {
-                "value": "s3config"
+                "value": "s3apple-cred"
             },
             "notes": {
                 "value": null
@@ -17,9 +17,9 @@
             "accessKeyId": {
                 "fp": "5537582b5408b627cd4dd4ff1c4b0ed40ea189ffc33ccf49e196ff6901dea522",
                 "key": "account-cloud-managed-55aeb42a050186140d44b424-2015-07-21T21:05:51-432179",
-                "sym_iv": "4cqpS/ebdBXspeBYZfLifA==",
-                "sym_key": "oVoS2ZdzIu8MdFuZHPLj/wZ+E/LHRP65Ma3+0HEqB3lJ6fUkjYnRa4FsmPpG4x8BZ6z5F9/9qRtTeZyluVCY7UqiSJN8hh1d6eFppyMnUPu2WB+DOSNebYQwHzhUERvc292pn+S+Bdklm0Ol1UszvPltQCsGgL7ITiCJy9ZxEUbKaXhcNgwtPxuPaOJzAzdVVxdoGXhFmOTKnnLMqc2T9qlPCJG5YLseff/Bf0VxoKRviGOzPhNFqN9GqJ/56/seyV2h6+21VOxliZ/rLOwcMVpIFzZJAEyWjqjYkdoDJ/iLR+zLidhGgn/MUj3rt0a2u5YAmjEnMWjLUb8Hc2xwTQ==",
-                "value": "EXvw5ldVIYG/FseM3B7S3U455qn649aywHI6108NXkI="
+                "sym_iv": "8NOgRV2ysOGCgl2MD9bFUA==",
+                "sym_key": "LXetfc1KJT84qrfUPuTPgf/Fm8am14Z5FSLt+k2iyX2POf7fjZO2nybAA26lF6KUAiSLaetsCkXGUT/Jgl37Pc1YhKfyplTp92JSLGflKMibU+gTQnoeOfAOBSldneU/vRPkp8d+1ciiFNCjnKnJ1DCqD1mFmcgoEceKMB2EgtFykyrmT3zKP8k0fcVRFP5nVlDYx369J1AvAwteU+jc0aRvAstnb0kmaxBGCqySnw/E0avbYeeYRTHppqd0BBtNQ/p5U72HJYF+ZxSDMcFuYi5OrzjF5kJbYgwMThhQ2Z3j0Go3lzJj7y1Gn20+H92zuhp19IoGp50UgO15VhlCIA==",
+                "value": "sK3RlYJp4iPVs8zp19rLJ0jdi8wYUxJlDGgY5HjcINY="
             },
             "encryptType": {
                 "value": "None"
@@ -37,9 +37,9 @@
             "secretKey": {
                 "fp": "5537582b5408b627cd4dd4ff1c4b0ed40ea189ffc33ccf49e196ff6901dea522",
                 "key": "account-cloud-managed-55aeb42a050186140d44b424-2015-07-21T21:05:51-432179",
-                "sym_iv": "GXfaGbVj8Ov1MUb/reiH0w==",
-                "sym_key": "LjK3r6eht+cbFhEqDkp2Lr7pUyBfoWRzfGUa6076HcyKZCKvSszJcC73BneiBknlkEENJAWdvFiunyf9p3gRpWUFpSd5G3ZqtimfNEGRXsRBwzeDVWTuo1Il0evzrR4HdrP+58BMFT8bxKXPhDSny85S4gFdrhtHqrzbfx4NtFgd6WeGJgLKVOnyIUGPojs+QTYgyLOBkUUz8PkNZrGdf24HCD5vmb8y9ealHXBEUsKGvZ6L8vdUD3him/+qyS1AHUyRmlbeLj4Ae0T2Ox9XMsnmrj8/cdnK+4UiilNh4xCQYUMKWUxJiNhQ8KXj4XEqRN2Hpnd5wmaMi2epkk+Q7g==",
-                "value": "YIsr8VpqgINYMhoUisOZb8oLvEk48lnQa2uH4C4JEwCtnda0jR1E5GFcbiekMQAr"
+                "sym_iv": "cQp7S6mfQTWjsFHDAgNSBA==",
+                "sym_key": "QbHNCVl9vWKVekwteGQzlxlgOi8HJcUyCBeCjWRBAORbXbrOoWuGjUWP6aSxIzU5g+VYV2A/4WcYSb/+AIdcBGh+upEnfnBdPSqaZGJMBrY+ifF/UZLUVrj/3hGl+9uzeoqFqApIolIYOVL1jVrkuHYwtekza6RCFTpndmXCOezyuZMIZVqvw+S4PXFUGVYUZnZo2WDyJRNjwC/GPWEsngsN8E8kZmpIQxUd2a2shmPHWyaZNk81pE1awQJmvZ7CofF2nMhxRr5NzbwukOKywowxDnW3aPfXll5Akf/NCLld8zIYcs32Xx4RyfE8Uh8pkdi/VMnRy0vkEBj9UaPsqg==",
+                "value": "ApCLQhdvwFWKN5SeXF+gVG2t6wVPj+xXSXjrAYdcP+xGJbiwcag0J3358LCLW0TL"
             },
             "serverSideEncryption": {
                 "value": false
